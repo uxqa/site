@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Rubik Glitch', cursive;
+        }
+
+        .wrapper {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+        }
+
+        .letter {
+            font-size: 124px;
+            color: red;
+            text-shadow: 10px 10px 0 red;
+        }
+
+        .letter1 {
+            animation: wave;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        .letter2 {
+            animation: wave2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes wave {
+            0% {
+                text-shadow: 5px 5px 0 rgb(154, 248, 77),
+                    10px 10px 0 rgb(77, 222, 248), 15px 15px 0 rgb(157, 77, 248),
+                    20px 20px 0 blue;
+            }
+
+            50% {
+                text-shadow: 10px 10px 0 blue;
+            }
+
+            100% {
+                text-shadow: 5px 5px 0 rgb(154, 248, 77),
+                    10px 10px 0 rgb(77, 222, 248), 15px 15px 0 rgb(157, 77, 248),
+                    20px 20px 0 blue;
+            }
+        }
+
+        @keyframes wave2 {
+            0% {
+                text-shadow: 10px 10px 0 blue;
+            }
+
+            50% {
+                text-shadow: 5px 5px 0 rgb(154, 248, 77),
+                    10px 10px 0 rgb(77, 222, 248), 15px 15px 0 rgb(157, 77, 248),
+                    20px 20px 0 blue;
+            }
+
+            100% {
+                text-shadow: 10px 10px 0 blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <span class="letter letter1">C</span>
+        <span class="letter letter2">S</span>
+        <span class="letter letter1">S</span>
+
+    </div>
+</body>
+
+</html>
